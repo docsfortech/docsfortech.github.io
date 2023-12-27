@@ -1,0 +1,8 @@
+.input {
+    width: 170%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background: var(--sl-color-gray-5);
+    color: var(--sl-color-white);
+}
