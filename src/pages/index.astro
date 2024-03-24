@@ -1,0 +1,26 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { LangList } from '@/components/LangList'
+---
+
+<BaseLayout
+  title="Docs for tech | Home"
+  description="A list of documentation and tutorials for various technologies and languages."
+>
+  <section class="container grid items-center max-w-4xl gap-6 pb-2 pt-6 md:py-10 md:pb-0">
+    <div class="flex max-w-[980px] flex-col items-start gap-2">
+      <h1
+        class="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl"
+      >
+        Docs for tech <br class="hidden sm:inline" />
+        
+      </h1>
+      <p class="max-w-[700px] text-lg text-muted-foreground">
+        A list of documentation and tutorials for various technologies and languages. <br>
+      </p>
+    </div>
+  </section>
+  <section class="container grid items-center max-w-4xl gap-6 pb-8 pt-6 md:py-10">
+    <LangList client:load />
+  </section>
+</BaseLayout>
